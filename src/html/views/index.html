@@ -1,14 +1,66 @@
 <% var data = {
-  title: "Заголовок | Проект"
+  title: "«PROресурс» | Новый курс по восстановлению энергии от Андрея Гукова"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="section">
+<header>
+  <div class="gukov-main">
+    <img src="img/mask-comp.png" alt="gukov" >
+  </div>
+  <!-- /.gukov-main -->
   <div class="container">
-    <h1>Hello!</h1>
+    <div class="column">
+      <h1>«PROресурс»</h1>
+      <div class="h2">Новый курс по восстановлению энергии от Андрея Гукова</div>
+
+      <div class="main-feature">
+        <div class="main-feature__img">
+          <img src="img/feature-1.svg" alt="В курсе">
+        </div>
+        <!-- /.main-feature__img -->
+        <div class="main-feature__text">
+          <div class="h3">В курсе:</div>
+          <ul class="primary-ul">
+            <li>28 видеоуроков с разбором ошибок</li>
+            <li>Рекомендации по питанию</li>
+            <li>Консультации по сну</li>
+          </ul>
+        </div>
+        <!-- /.main-feature__text -->
+      </div>
+      <!-- /.main-feature -->
+
+      <div class="main-feature">
+        <div class="main-feature__img">
+          <img src="img/feature-2.svg" alt="Вы научитесь">
+        </div>
+        <!-- /.main-feature__img -->
+        <div class="main-feature__text">
+          <div class="h3">Вы научитесь:</div>
+          <ul class="primary-ul">
+            <li>Правильно дышать</li>
+            <li>Правильно заниматься</li>
+            <li>Правильно спать</li>
+          </ul>
+        </div>
+        <!-- /.main-feature__text -->
+      </div>
+      <!-- /.main-feature -->
+
+      <div class="couple">
+        <div class="btn btn-primary">
+          <span>Записаться на курс</span>
+        </div>
+        <!-- /.btn btn-primary -->
+        <p class="small">Старт нового потока - 10 февраля!</p>
+      </div>
+      <!-- /.couple -->
+     
+    </div>
+    <!-- /.column -->
   </div>
   <!-- /.container -->
-</div>
-<!-- /.section -->
+</header>
+
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -4,10 +4,69 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/style.bundle.css" />
 
     <title><%=title%></title>
   </head>
   <body>
+    <navbar>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">
+            <div class="logo__img">
+              <img src="img/logo.svg" alt="Гуков Андрей Александрович лого" class="logo__img">
+            </div>
+            <div class="logo__text">
+              <span class="title">Гуков Андрей Александрович</span>
+              <span class="p">Мануальный терапевт. <br> Гирудотерапевт. <br> Невролог. </span>
+            </div>
+          </a>
+
+          <ul class="menu">
+            <li>
+              <a href="#">о курсе</a>            
+            </li>
+            <li>
+              <a href="#">отзывы</a>
+            </li>
+            <li>
+              <a href="#">результаты</a>
+            </li>
+            <li>
+              <a href="#">стоимость</a>
+            </li>
+            <li>
+              <a href="#">об авторе</a>
+            </li>
+          </ul>
+          <!-- /.menu -->      
+
+          <div class="info-block">
+            <a href="tel:+79175437081" class="phone">+7 (917) 543-70-81</a>
+            <a href="#" class="link">Обратный звонок</a>
+          </div>
+          <!-- /.info-block -->
+
+          <svg class="burger" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+              <path class="line top"
+                      d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+              <path class="line middle"
+                      d="m 70,50 h -40" />
+              <path class="line bottom"
+                      d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg>
+        </div>
+        <!-- /.navbar -->
+      </div>
+      <!-- /.container -->
+    </navbar>
     
