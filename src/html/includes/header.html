@@ -13,6 +13,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Not cool -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    
     <link rel="stylesheet" href="css/style.bundle.css" />
 
     <title><%=title%></title>
@@ -33,26 +36,26 @@
 
           <ul class="menu">
             <li>
-              <a href="#">о курсе</a>            
+              <a href="#about">о курсе</a>            
             </li>
             <li>
-              <a href="#">отзывы</a>
+              <a href="#gukov-reviews">отзывы</a>
             </li>
             <li>
-              <a href="#">результаты</a>
+              <a href="#you-got">результаты</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">стоимость</a>
             </li>
             <li>
               <a href="#">об авторе</a>
-            </li>
+            </li> -->
           </ul>
           <!-- /.menu -->      
 
           <div class="info-block">
             <a href="tel:+79175437081" class="phone">+7 (917) 543-70-81</a>
-            <a href="#" class="link">Обратный звонок</a>
+            <a data-fancybox data-src="#call-me-modal" href="javascript:;" class="link">Обратный звонок</a>
           </div>
           <!-- /.info-block -->
 
