@@ -34,6 +34,38 @@
       <div class="privacy-link">Согласие на обработку персональных данных</div>
     </div>
 
+      <!-- Modal HTML embedded directly into document -->
+      <div id="ask-modal" class="modal"> 
+        <div class="gukov-wrapper">
+          <img src="img/modal/gukov.png" alt="gukov">
+        </div>
+        <!-- /.gukov-wrapper -->
+        <div class="content">
+            <div class="h2">Задать вопрос</div>
+            <div class="subtitle">Задайте вопрос и я свяжусь с Вами в ближайшее время!</div>
+            <form id="ask-form" action="javascript:" onsubmit="callHandler('#ask-form')">
+                <input type="hidden" name="form_name" value="Задать вопрос">
+  
+                <div class="input-wrapper">
+                    <input type="text" name="user_name" placeholder="Как вас зовут?" required>
+                </div>
+                <!-- /.input-wrapper -->
+                <div class="input-wrapper">
+                  <input type="text" name="user_message" placeholder="Задайте вопрос" required>
+                </div>
+                <!-- /.input-wrapper -->
+                <div class="input-wrapper">
+                    <input type="text" name="user_phone" placeholder="Номер Вашего телефона" required>
+                </div>
+                <!-- /.input-wrapper -->
+  
+                <button class="btn btn-primary">Задать вопрос</button>
+            </form>
+        </div>
+        <!-- /.content --> 
+        <div class="privacy-link">Согласие на обработку персональных данных</div>
+      </div>
+
     <!-- Modal HTML embedded directly into document -->
     <div id="get-course-modal" class="modal"> 
       <div class="gukov-wrapper">
@@ -42,7 +74,7 @@
       <!-- /.gukov-wrapper -->
       <div class="content">
           <div class="h2">Записаться на курс</div>
-          <div class="subtitle">Закажите обратный звонок и я свяжусь с Вами в ближайшее время!</div>
+          <div class="subtitle">Закажите курс и я свяжусь с Вами в ближайшее время!</div>
           <form id="get-course-form" action="javascript:" onsubmit="callHandler('#get-course-form')">
               <input type="hidden" name="form_name" value="Записаться на курс">
 

@@ -7,6 +7,11 @@ $('.burger').click(function()  {
     });
 });
 
+$('.accordion .head').click(function() {
+    $('.accordion').removeClass('active');
+    $(this).parent('.accordion').toggleClass('active');;
+});
+
 $('.lazy').Lazy({
     onError: function(element) {
         console.log('error loading ' + element.data('src'));
