@@ -1,3 +1,5 @@
+import simpleParallax from 'simple-parallax-js';
+
 console.log('ok');
 
 $('.burger').click(function()  {            
@@ -12,9 +14,49 @@ $('.accordion .head').click(function() {
     $(this).parent('.accordion').toggleClass('active');;
 });
 
+$('.lightbox-card').mouseover(function() {
+    let targetName = $(this).data('phone');
+    $(`.large-phone[data-phone="${targetName}"]`).addClass('active');
+});
+$('.lightbox-card').mouseout(function() {
+    let targetName = $(this).data('phone');
+    $(`.large-phone[data-phone="${targetName}"]`).removeClass('active');
+});
+
+
 $('.lazy').Lazy({
     onError: function(element) {
         console.log('error loading ' + element.data('src'));
+    },
+    // called after an element was successfully handled
+    afterLoad: function(element) {
+        try {
+            //Add parallax effect
+            if(element[0].classList.contains('petal-top__img')) {
+                let petalsTop = element[0];
+                new simpleParallax(petalsTop, {
+                    delay: 0,
+                    orientation: 'up',
+                    scale: 2.5,
+                    overflow: true,
+                    delay: .8,
+                    transition: 'cubic-bezier(0,0,0,1)',
+                });
+            }
+            else if(element[0].classList.contains('petal-bottom__img')) {
+                let petalsBottom = element[0];
+                new simpleParallax(petalsBottom, {
+                    delay: 0,
+                    orientation: 'up',
+                    scale: 3,
+                    overflow: true,
+                    delay: .8,
+                    transition: 'cubic-bezier(0,0,0,1)',
+                });
+            }
+        } catch (error) {
+            console.log(`Parralax error: ${error}`);
+        }
     }
 });
 
