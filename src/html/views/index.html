@@ -4,6 +4,12 @@
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <header>
+  <!-- Leaf -->
+  <img data-src="img/leaf/petal-header-xxl.png" alt="" class="lazy petal xxl slower">
+  <img data-src="img/leaf/petal-header-xl.png" alt="" class="lazy petal xl medium">
+  <img data-src="img/leaf/petal-header-md.png" alt="" class="lazy petal md fast">
+  <img data-src="img/leaf/petal-header-sm.png" alt="" class="lazy petal sm faster">
+
   <div class="gukov-main">
     <img class="lazy" data-src="img/mask-comp.png" alt="gukov" >
   </div>
@@ -80,6 +86,7 @@
 
 <div class="section" id="about">
   <div class="container">
+
     <div class="row green-flower">
       <div class="primary-card">
         <div class="youtube-wrapper">
@@ -115,6 +122,11 @@
 
 <!-- <div class="section lazy" id="gukov-reviews" data-src="img/gukov-bg.jpg"> -->
 <div class="section" id="gukov-reviews">
+  <!-- Leaf -->
+  <img data-src="img/leaf/leaf-reviews.png" alt="" class="lazy petal xl slower">
+  <img data-src="img/leaf/petal-reviews-lg.png" alt="" class="lazy petal lg slow">
+  <img data-src="img/leaf/petal-reviews-sm.png" alt="" class="lazy petal sm fast">
+
   <div class="container">
       <div class="row">
         <div class="column-text">
@@ -146,12 +158,13 @@
             <div class="h5">Полина Гагарина</div>
             <span>Певица, композитор, актриса, модель</span>
           </div>
-          <div class="phone">
+          <a href="img/stars/gagarina-phone.png" data-fancybox="phone" class="phone">
             <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="gagarina-phone">
-          </div>
+          </a>
+          <!-- /.phone -->
         </div>
         <!-- /.lightbox-card -->
-        <div class="lightbox-card" data-phone="gagarina-left">
+        <div class="lightbox-card" data-phone="afrikantova-left">
           <div class="avatar">
             <img class="lazy" data-src="img/stars/afrikantova.jpg" alt="afrikantova">
           </div>
@@ -160,12 +173,13 @@
             <span>Участница проекта Дом2
               на ТНТ</span>
           </div>
-          <div class="phone">
-            <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="afrikantova-phone">
-          </div>
+          <a href="img/stars/afrikantova-phone.png" data-fancybox="phone" class="phone">
+            <img class="lazy" data-src="img/stars/afrikantova-phone-sm.jpg" alt="afrikantova-phone">
+          </a>
+          <!-- /.phone -->
         </div>
         <!-- /.lightbox-card -->
-        <div class="lightbox-card" data-phone="gagarina">
+        <div class="lightbox-card" data-phone="kudryavceva">
           <div class="avatar">
             <img class="lazy" data-src="img/stars/kudryavceva.jpg" alt="kudryavceva">
           </div>
@@ -173,12 +187,13 @@
             <div class="h5">Лера Кудрявцева</div>
             <span>Телеведущая</span>
           </div>
-          <div class="phone">
-            <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="kudryavceva-phone">
-          </div>
+          <a href="img/stars/kudryavceva-phone.png" data-fancybox="phone" class="phone">
+            <img class="lazy" data-src="img/stars/kudryavceva-phone-sm.jpg" alt="kudryavceva-phone">
+          </a>
+          <!-- /.phone -->
         </div>
         <!-- /.lightbox-card -->
-        <div class="lightbox-card" data-phone="gagarina-left">
+        <div class="lightbox-card" data-phone="kulakova-left">
           <div class="avatar">
             <img class="lazy" data-src="img/stars/kulakova.jpg" alt="kulakova">
           </div>
@@ -186,12 +201,13 @@
             <div class="h5">Светлана Кулакова</div>
             <span>Cпортсменка, чемпионка мира по боксу</span>
           </div>
-          <div class="phone">
-            <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="kulakova-phone">
-          </div>
+          <a href="img/stars/kulakova-phone.png" data-fancybox="phone" class="phone">
+            <img class="lazy" data-src="img/stars/kulakova-phone-sm.jpg" alt="kulakova-phone">
+          </a>
+          <!-- /.phone -->
         </div>
         <!-- /.lightbox-card -->
-        <div class="lightbox-card" data-phone="gagarina">
+        <div class="lightbox-card" data-phone="tarasova">
           <div class="avatar">
             <img class="lazy" data-src="img/stars/tarasova.jpg" alt="tarasova">
           </div>
@@ -199,21 +215,22 @@
             <div class="h5">Аглая Тарасова</div>
             <span>Актриса</span>
           </div>
-          <div class="phone">
-            <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="tarasova-phone">
-          </div>
+          <a href="img/stars/tarasova-phone.png" data-fancybox="phone" class="phone">
+            <img class="lazy" data-src="img/stars/tarasova-phone-sm.jpg" alt="tarasova-phone">
+          </a>
+          <!-- /.phone -->
         </div>
         <!-- /.lightbox-card -->
-        <div class="lightbox-card" data-phone="gagarina-left">
+        <div class="lightbox-card">
           <div class="avatar">
             <img class="lazy" data-src="img/stars/others.jpg" alt="others">
           </div>
           <div class="text">
             <div class="h5">Другие довольные клиенты</div>
           </div>
-          <div class="phone">
+          <!-- <div class="phone">
             <img class="lazy" data-src="img/stars/gagarina-phone-sm.jpg" alt="others-phone">
-          </div>
+          </div> -->
         </div>
         <!-- /.lightbox-card -->
 
@@ -221,10 +238,23 @@
           <img class="lazy" data-src="img/stars/gagarina-phone.png" alt="gagarina-phone">
         </div>
         <!-- /.large-phone right -->
-        <div class="large-phone" data-phone="gagarina-left" data-direction="left">
-          <img class="lazy" data-src="img/stars/gagarina-phone.png" alt="gagarina-phone">
+        <div class="large-phone" data-phone="afrikantova-left" data-direction="left">
+          <img class="lazy" data-src="img/stars/afrikantova-phone.png" alt="afrikantova-phone">
+        </div>
+        <!-- /.large-phone -->
+        <div class="large-phone" data-phone="kudryavceva" data-direction="right">
+          <img class="lazy" data-src="img/stars/kudryavceva-phone.png" alt="kudryavceva-phone">
         </div>
         <!-- /.large-phone right -->
+        <div class="large-phone" data-phone="kulakova-left" data-direction="left">
+          <img class="lazy" data-src="img/stars/kulakova-phone.png" alt="kulakova-phone">
+        </div>
+        <!-- /.large-phone -->
+        <div class="large-phone" data-phone="tarasova" data-direction="right">
+          <img class="lazy" data-src="img/stars/tarasova-phone.png" alt="tarasova-phone">
+        </div>
+        <!-- /.large-phone right -->
+
       </div>
       <!-- /.lightbox-cards -->
   </div>
@@ -291,6 +321,12 @@
 
 <div class="section" id="important">
   <div class="container">
+    <!-- Leaf -->
+    <img data-src="img/leaf/petal-attention-left.png" alt="" class="lazy petal md-left fast">
+    <img data-src="img/leaf/petal-attention-right.png" alt="" class="lazy petal md-right faster">
+    <img data-src="img/leaf/petal-attention-left-bottom.png" alt="" class="lazy petal sm-left slower">
+    <img data-src="img/leaf/petal-attention-right-bottom.png" alt="" class="lazy petal sm-right medium">
+
     <img data-src="img/important.png" alt="important" class="important lazy">
     <div class="h5">Курс «PROресурс» построен таким образом, что бы после него <br>
       Вы сами могли удерживать здоровое состояние организма!</div>
@@ -382,11 +418,16 @@
 
 <div id="price" class="section">
   <div class="container">
+    <!-- Leaf -->
+    <img data-src="img/leaf/money-left.png" alt="" class="lazy petal left medium">
+    <img data-src="img/leaf/money-right.png" alt="" class="lazy petal right fast">
+
+
     <div class="h2 decor centered" id="price-ancor">Стоимость курса:</div>
 
     <div class="courses">
       <div class="course">
-        <img src="img/price-1.jpg" alt="standart" class="head-img">
+        <img class="lazy" data-src="img/price-1.jpg" alt="standart" class="head-img">
         <div class="body">
           <div class="h3">Основной пакет</div>
           <ul class="primary-ul">
@@ -409,7 +450,7 @@
       <!-- /.course -->
 
       <div class="course">
-        <img src="img/price-2.jpg" alt="plus" class="head-img">
+        <img class="lazy" data-src="img/price-2.jpg" alt="plus" class="head-img">
         <div class="body">
           <div class="h3">Расширенный пакет</div>
           <ul class="primary-ul">
@@ -439,6 +480,10 @@
 <!-- /#price.section -->
 
 <div id="qa" class="section">
+  <!-- Leaf -->
+  <img data-src="img/leaf/petal-qa-lg.png" alt="" class="lazy petal lg slow">
+  <img data-src="img/leaf/petal-qa-sm.png" alt="" class="lazy petal sm fast">
+
   <div class="container">
     <div class="h2 decor centered">Вопросы и ответы:</div>
 
@@ -569,6 +614,9 @@
   </div>
 
   <div class="container">
+    <!-- Leaf -->
+    <img data-src="img/leaf/petal-about.png" alt="" class="lazy petal lg slow">
+
     <div class="h2 decor centered">Об авторе курса:</div>
     <div class="big-digits">
       <div class="big-digits__card">
@@ -655,55 +703,55 @@
 
     <div class="sertificates">
       <a href="img/sertificates/sertificate-1.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-1.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-1.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-2.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-2.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-2.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-3.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-3.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-3.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-4.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-4.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-4.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-5.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-5.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-5.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-6.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-6.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-6.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-7.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-7.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-7.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-8.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-8.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-8.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-9.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-9.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-9.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-10.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-10.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-10.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-11.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-11.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-11.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-12.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-12.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-12.jpg" />
       </a>
       <!-- /.sertificate -->
       <a href="img/sertificates/sertificate-13.jpg" data-fancybox="sertificate" class="sertificate">
-        <img src="img/sertificates/thumbs/sertificate-13.jpg" />
+        <img class="lazy" data-src="img/sertificates/thumbs/sertificate-13.jpg" />
       </a>
       <!-- /.sertificate -->
     </div>
